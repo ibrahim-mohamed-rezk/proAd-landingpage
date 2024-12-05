@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -10,6 +9,11 @@
     <link rel="stylesheet" href="./src/fonts/icomoon/style.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./src/css/bootstrap.min.css" />
+    <!-- animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- Style -->
     <link rel="stylesheet" href="./src/css/style.css" />
     <title>ProAd</title>
@@ -26,48 +30,614 @@
 
     <header class="site-navbar" role="banner">
       <div class="container">
-        <nav class="row align-items-center">
-          <div class="col-11 col-xl-2">
-            <h1 class="mb-0 site-logo">
-              <a href="#" class="text-white mb-0">
-                <img src="./src/images/logo.png" alt="">
-              </a>
-            </h1>
+        <div class="site-nav">
+          <!-- mobile logo -->
+          <h1 class="site-logo">
+            <a href="#" class="">
+              <img src="./src/images/logo.png" alt="" />
+            </a>
+          </h1>
+
+          <!--navigations -->
+          <nav class="site-navigation" role="navigation">
+            <ul class="site-menu js-clone-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Contact Us </a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">fan page</a></li>
+              <li><a href="#">Policy</a></li>
+            </ul>
+          </nav>
+
+          <div class="auth-buttons">
+            <button class="register">Register</button>
+            <button class="sigin">Sing In</button>
           </div>
-          <div class="col-12 col-md-10 d-none d-xl-block">
-            <nav
-              class="site-navigation position-relative text-right"
-              role="navigation"
-            >
-              <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Listings</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div
-            class="d-inline-block d-xl-none ml-md-0 mr-auto py-3"
-            style="position: relative; top: 3px"
-          >
-            <a
-              href="./src/#"
-              class="site-menu-toggle js-menu-toggle text-white"
-            >
+
+          <!-- mobile menue -->
+          <div class="mobile-menue-button">
+            <a href="#" class="site-menu-toggle js-menu-toggle text-white">
               <span class="icon-menu h3"></span>
             </a>
           </div>
-        </nav>
+        </div>
       </div>
     </header>
 
-    <div class="hero"></div>
+    <div class="hero">
+      <div class="container">
+        <div class="hero-text">
+          <h2>The Proad</h2>
+          <h3 class="hero-text-slider">
+            <div>Carlos Córdova</div>
+            <div>Web Developer</div>
+            <div>Systems Engineer</div>
+          </h3>
+        </div>
+        <div class="hero-buttons">
+          <button class="fqa">FAQ</button>
+          <button class="services">
+            <span>Services</span>
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.799 9.89948L19.0919 19.0919L9.89952 19.799"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M19.799 9.89948L19.0919 19.0919L9.89952 19.799"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="wow animate__animated animate__fadeInUp about-proad"
+      data-wow-duration=".5s"
+      data-wow-delay="0s"
+      data-wow-offset="100"
+    >
+      <h2>
+        <span>About The Proad</span>
+        <div></div>
+      </h2>
+      <p>
+        Welcome to our platform where earning money is as simple as watching ads
+        and clicking on short links! We offer an effortless and straightforward
+        way to make extra income from the comfort of your own home. Whether
+        you're looking to supplement your current earnings or seeking a flexible
+        side hustle, our platform provides you with opportunities to earn
+        without any complicated tasks.
+      </p>
+    </div>
+
+    <div
+      class="wow animate__animated animate__fadeInUp achievements-sec"
+      data-wow-duration=".5s"
+      data-wow-delay="0s"
+      data-wow-offset="100"
+    >
+      <div class="container">
+        <div class="achievements-desc">
+          <h2>
+            <span>Lots of</span>
+            <span>achievements</span>
+          </h2>
+          <p>With our super powers we have reached this</p>
+        </div>
+        <div class="achievements">
+          <div class="achievements-row">
+            <div class="achievement">
+              <svg
+                width="32"
+                height="33"
+                viewBox="0 0 32 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_73_17)">
+                  <path
+                    d="M24 13.8333H32L28 8.5L24 13.8333ZM24 19.1667H32L28 24.5L24 19.1667Z"
+                    fill="#DBE6FF"
+                  />
+                  <path
+                    d="M1.33333 0.5H9.33333V32.5H1.33333C0.979711 32.5 0.640572 32.3595 0.390523 32.1095C0.140475 31.8594 0 31.5203 0 31.1667V1.83333C0 1.47971 0.140475 1.14057 0.390523 0.890523C0.640572 0.640475 0.979711 0.5 1.33333 0.5Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M12 0.5H20C20.3536 0.5 20.6928 0.640475 20.9428 0.890523C21.1929 1.14057 21.3333 1.47971 21.3333 1.83333V31.1667C21.3333 31.5203 21.1929 31.8594 20.9428 32.1095C20.6928 32.3595 20.3536 32.5 20 32.5H12V0.5Z"
+                    fill="#1DB5BE"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_73_17">
+                    <rect
+                      width="32"
+                      height="32"
+                      fill="white"
+                      transform="translate(0 0.5)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <div>
+                <h3>10,000+</h3>
+                <p>Active Users per Week</p>
+              </div>
+            </div>
+            <div class="achievement">
+              <svg
+                width="32"
+                height="33"
+                viewBox="0 0 32 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_73_70)">
+                  <path
+                    d="M28 32.5H16C15.6463 32.5 15.3072 32.3595 15.0571 32.1094C14.8071 31.8594 14.6666 31.5202 14.6666 31.1666V28.5C14.6666 28.1463 14.8071 27.8072 15.0571 27.5571C15.3072 27.3071 15.6463 27.1666 16 27.1666H28C28.3536 27.1666 28.6927 27.3071 28.9428 27.5571C29.1928 27.8072 29.3333 28.1463 29.3333 28.5V31.1666C29.3333 31.5202 29.1928 31.8594 28.9428 32.1094C28.6927 32.3595 28.3536 32.5 28 32.5Z"
+                    fill="#DBE6FF"
+                  />
+                  <path
+                    d="M28 0.5H3.99996C3.64634 0.5 3.3072 0.640475 3.05715 0.890523C2.8071 1.14057 2.66663 1.47971 2.66663 1.83333V4.5C2.66663 4.85362 2.8071 5.19276 3.05715 5.44281C3.3072 5.69286 3.64634 5.83333 3.99996 5.83333H28C28.3536 5.83333 28.6927 5.69286 28.9428 5.44281C29.1928 5.19276 29.3333 4.85362 29.3333 4.5V1.83333C29.3333 1.47971 29.1928 1.14057 28.9428 0.890523C28.6927 0.640475 28.3536 0.5 28 0.5Z"
+                    fill="#1DB5BE"
+                  />
+                  <path
+                    d="M28 8.5H3.99996C3.64634 8.5 3.3072 8.64047 3.05715 8.89052C2.8071 9.14057 2.66663 9.47971 2.66663 9.83333V23.1667C2.66663 23.5203 2.8071 23.8594 3.05715 24.1095C3.3072 24.3595 3.64634 24.5 3.99996 24.5H28C28.3536 24.5 28.6927 24.3595 28.9428 24.1095C29.1928 23.8594 29.3333 23.5203 29.3333 23.1667V9.83333C29.3333 9.47971 29.1928 9.14057 28.9428 8.89052C28.6927 8.64047 28.3536 8.5 28 8.5Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_73_70">
+                    <rect
+                      width="32"
+                      height="32"
+                      fill="white"
+                      transform="translate(0 0.5)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <div>
+                <h3>887</h3>
+                <p>Users</p>
+              </div>
+            </div>
+          </div>
+          <div class="achievements-row">
+            <div class="achievement">
+              <svg
+                width="32"
+                height="33"
+                viewBox="0 0 32 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.66665 1.83337H2.66665C2.31302 1.83337 1.97388 1.97385 1.72384 2.2239C1.47379 2.47395 1.33331 2.81309 1.33331 3.16671V29.8334C1.33331 30.187 1.47379 30.5261 1.72384 30.7762C1.97388 31.0262 2.31302 31.1667 2.66665 31.1667H6.66665V1.83337Z"
+                  fill="#DBE6FF"
+                />
+                <path
+                  d="M9.33331 31.1667H22.6666V1.83337H9.33331V31.1667ZM16 25.8334C15.6464 25.8334 15.3072 25.6929 15.0572 25.4429C14.8071 25.1928 14.6666 24.8537 14.6666 24.5C14.6666 24.1464 14.8071 23.8073 15.0572 23.5572C15.3072 23.3072 15.6464 23.1667 16 23.1667C16.3536 23.1667 16.6927 23.3072 16.9428 23.5572C17.1928 23.8073 17.3333 24.1464 17.3333 24.5C17.3333 24.8537 17.1928 25.1928 16.9428 25.4429C16.6927 25.6929 16.3536 25.8334 16 25.8334ZM16 7.16671C16.3536 7.16671 16.6927 7.30718 16.9428 7.55723C17.1928 7.80728 17.3333 8.14642 17.3333 8.50004C17.3333 8.85366 17.1928 9.1928 16.9428 9.44285C16.6927 9.6929 16.3536 9.83337 16 9.83337C15.6464 9.83337 15.3072 9.6929 15.0572 9.44285C14.8071 9.1928 14.6666 8.85366 14.6666 8.50004C14.6666 8.14642 14.8071 7.80728 15.0572 7.55723C15.3072 7.30718 15.6464 7.16671 16 7.16671ZM16 15.1667C16.3536 15.1667 16.6927 15.3072 16.9428 15.5572C17.1928 15.8073 17.3333 16.1464 17.3333 16.5C17.3333 16.8537 17.1928 17.1928 16.9428 17.4429C16.6927 17.6929 16.3536 17.8334 16 17.8334C15.6464 17.8334 15.3072 17.6929 15.0572 17.4429C14.8071 17.1928 14.6666 16.8537 14.6666 16.5C14.6666 16.1464 14.8071 15.8073 15.0572 15.5572C15.3072 15.3072 15.6464 15.1667 16 15.1667Z"
+                  fill="white"
+                />
+                <path
+                  d="M29.3333 1.83337H25.3333V31.1667H29.3333C29.6869 31.1667 30.0261 31.0262 30.2761 30.7762C30.5262 30.5261 30.6666 30.187 30.6666 29.8334V3.16671C30.6666 2.81309 30.5262 2.47395 30.2761 2.2239C30.0261 1.97385 29.6869 1.83337 29.3333 1.83337Z"
+                  fill="#1DB5BE"
+                />
+              </svg>
+
+              <div>
+                <h3>500+</h3>
+                <p>Clients</p>
+              </div>
+            </div>
+            <div class="achievement">
+              <svg
+                width="32"
+                height="33"
+                viewBox="0 0 32 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 13.8334H2.66671C2.31309 13.8334 1.97395 13.6929 1.7239 13.4429C1.47385 13.1928 1.33337 12.8537 1.33337 12.5V3.16671C1.33337 2.81309 1.47385 2.47395 1.7239 2.2239C1.97395 1.97385 2.31309 1.83337 2.66671 1.83337H12C12.3537 1.83337 12.6928 1.97385 12.9429 2.2239C13.1929 2.47395 13.3334 2.81309 13.3334 3.16671V12.5C13.3334 12.8537 13.1929 13.1928 12.9429 13.4429C12.6928 13.6929 12.3537 13.8334 12 13.8334Z"
+                  fill="white"
+                />
+                <path
+                  d="M12 31.1667H2.66671C2.31309 31.1667 1.97395 31.0263 1.7239 30.7762C1.47385 30.5262 1.33337 30.187 1.33337 29.8334V20.5001C1.33337 20.1465 1.47385 19.8073 1.7239 19.5573C1.97395 19.3072 2.31309 19.1667 2.66671 19.1667H12C12.3537 19.1667 12.6928 19.3072 12.9429 19.5573C13.1929 19.8073 13.3334 20.1465 13.3334 20.5001V29.8334C13.3334 30.187 13.1929 30.5262 12.9429 30.7762C12.6928 31.0263 12.3537 31.1667 12 31.1667Z"
+                  fill="white"
+                />
+                <path
+                  d="M17.3334 3.16675H30.6667V5.83341H17.3334V3.16675Z"
+                  fill="#1DB5BE"
+                />
+                <path
+                  d="M30.6667 20.5H17.3334V23.1667H30.6667V20.5Z"
+                  fill="#1DB5BE"
+                />
+                <path
+                  d="M30.6667 27.1667H17.3334V29.8334H30.6667V27.1667Z"
+                  fill="#DBE6FF"
+                />
+                <path
+                  d="M30.6667 9.83337H17.3334V12.5H30.6667V9.83337Z"
+                  fill="#DBE6FF"
+                />
+              </svg>
+
+              <div>
+                <h3>$350,000</h3>
+                <p>total was withdrawn by users</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="wow animate__animated animate__fadeInUp features-sec"
+      data-wow-duration=".5s"
+      data-wow-delay="0s"
+      data-wow-offset="100"
+    >
+      <div class="container">
+        <div class="features-desc">
+          <h2>Features</h2>
+          <p>
+            Lorem ipsum is common placeholder text used to demonstrate the
+            graphic elements of a document or visual presentation.
+          </p>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_18_1954)">
+                <path
+                  d="M24 13.3333H32L28 8L24 13.3333ZM24 18.6667H32L28 24L24 18.6667Z"
+                  fill="#DBE6FF"
+                />
+                <path
+                  d="M1.33333 0H9.33333V32H1.33333C0.979711 32 0.640572 31.8595 0.390523 31.6095C0.140475 31.3594 0 31.0203 0 30.6667V1.33333C0 0.979711 0.140475 0.640572 0.390523 0.390523C0.640572 0.140475 0.979711 0 1.33333 0Z"
+                  fill="#4680FF"
+                />
+                <path
+                  d="M12 0H20C20.3536 0 20.6928 0.140475 20.9428 0.390523C21.1929 0.640572 21.3333 0.979711 21.3333 1.33333V30.6667C21.3333 31.0203 21.1929 31.3594 20.9428 31.6095C20.6928 31.8595 20.3536 32 20 32H12V0Z"
+                  fill="#1DB5BE"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_18_1954">
+                  <rect width="32" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <h3>PTC.</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat
+              nibh tristique ipsum.
+            </p>
+          </div>
+          <div class="feature">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.33331 1.33325H30.6666L26.6666 9.33325H1.33331L5.33331 1.33325Z"
+                fill="#4680FF"
+              />
+              <path
+                d="M5.33331 12H30.6666L26.6666 20H1.33331L5.33331 12Z"
+                fill="#1DB5BE"
+              />
+              <path
+                d="M5.33331 22.6665H30.6666L26.6666 30.6665H1.33331L5.33331 22.6665Z"
+                fill="#DBE6FF"
+              />
+            </svg>
+
+            <h3>PTC.</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat
+              nibh tristique ipsum.
+            </p>
+          </div>
+          <div class="feature">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_18_1954)">
+                <path
+                  d="M24 13.3333H32L28 8L24 13.3333ZM24 18.6667H32L28 24L24 18.6667Z"
+                  fill="#DBE6FF"
+                />
+                <path
+                  d="M1.33333 0H9.33333V32H1.33333C0.979711 32 0.640572 31.8595 0.390523 31.6095C0.140475 31.3594 0 31.0203 0 30.6667V1.33333C0 0.979711 0.140475 0.640572 0.390523 0.390523C0.640572 0.140475 0.979711 0 1.33333 0Z"
+                  fill="#4680FF"
+                />
+                <path
+                  d="M12 0H20C20.3536 0 20.6928 0.140475 20.9428 0.390523C21.1929 0.640572 21.3333 0.979711 21.3333 1.33333V30.6667C21.3333 31.0203 21.1929 31.3594 20.9428 31.6095C20.6928 31.8595 20.3536 32 20 32H12V0Z"
+                  fill="#1DB5BE"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_18_1954">
+                  <rect width="32" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <h3>PTC.</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat
+              nibh tristique ipsum.
+            </p>
+          </div>
+          <div class="feature">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_18_1954)">
+                <path
+                  d="M24 13.3333H32L28 8L24 13.3333ZM24 18.6667H32L28 24L24 18.6667Z"
+                  fill="#DBE6FF"
+                />
+                <path
+                  d="M1.33333 0H9.33333V32H1.33333C0.979711 32 0.640572 31.8595 0.390523 31.6095C0.140475 31.3594 0 31.0203 0 30.6667V1.33333C0 0.979711 0.140475 0.640572 0.390523 0.390523C0.640572 0.140475 0.979711 0 1.33333 0Z"
+                  fill="#4680FF"
+                />
+                <path
+                  d="M12 0H20C20.3536 0 20.6928 0.140475 20.9428 0.390523C21.1929 0.640572 21.3333 0.979711 21.3333 1.33333V30.6667C21.3333 31.0203 21.1929 31.3594 20.9428 31.6095C20.6928 31.8595 20.3536 32 20 32H12V0Z"
+                  fill="#1DB5BE"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_18_1954">
+                  <rect width="32" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <h3>PTC.</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat
+              nibh tristique ipsum.
+            </p>
+          </div>
+          <div class="feature">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_18_1954)">
+                <path
+                  d="M24 13.3333H32L28 8L24 13.3333ZM24 18.6667H32L28 24L24 18.6667Z"
+                  fill="#DBE6FF"
+                />
+                <path
+                  d="M1.33333 0H9.33333V32H1.33333C0.979711 32 0.640572 31.8595 0.390523 31.6095C0.140475 31.3594 0 31.0203 0 30.6667V1.33333C0 0.979711 0.140475 0.640572 0.390523 0.390523C0.640572 0.140475 0.979711 0 1.33333 0Z"
+                  fill="#4680FF"
+                />
+                <path
+                  d="M12 0H20C20.3536 0 20.6928 0.140475 20.9428 0.390523C21.1929 0.640572 21.3333 0.979711 21.3333 1.33333V30.6667C21.3333 31.0203 21.1929 31.3594 20.9428 31.6095C20.6928 31.8595 20.3536 32 20 32H12V0Z"
+                  fill="#1DB5BE"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_18_1954">
+                  <rect width="32" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <h3>PTC.</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat
+              nibh tristique ipsum.
+            </p>
+          </div>
+          <div class="feature">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_18_1954)">
+                <path
+                  d="M24 13.3333H32L28 8L24 13.3333ZM24 18.6667H32L28 24L24 18.6667Z"
+                  fill="#DBE6FF"
+                />
+                <path
+                  d="M1.33333 0H9.33333V32H1.33333C0.979711 32 0.640572 31.8595 0.390523 31.6095C0.140475 31.3594 0 31.0203 0 30.6667V1.33333C0 0.979711 0.140475 0.640572 0.390523 0.390523C0.640572 0.140475 0.979711 0 1.33333 0Z"
+                  fill="#4680FF"
+                />
+                <path
+                  d="M12 0H20C20.3536 0 20.6928 0.140475 20.9428 0.390523C21.1929 0.640572 21.3333 0.979711 21.3333 1.33333V30.6667C21.3333 31.0203 21.1929 31.3594 20.9428 31.6095C20.6928 31.8595 20.3536 32 20 32H12V0Z"
+                  fill="#1DB5BE"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_18_1954">
+                  <rect width="32" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <h3>PTC.</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat
+              nibh tristique ipsum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="wow animate__animated animate__fadeInUp payments-sec"
+      data-wow-duration=".5s"
+      data-wow-delay="0s"
+      data-wow-offset="100"
+    >
+      <div class="container">
+        <svg
+          width="1532"
+          height="1223"
+          viewBox="0 0 1532 1223"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1435.97 843.245C1361.56 1355.52 325.316 1240.82 -183.503 1119.44C-254.469 797.779 -392.474 148.767 -376.765 125.992C-357.129 97.5223 -259.464 71.6027 -11.9445 15.5142C235.575 -40.5743 132.743 65.6539 377.679 170.607C622.615 275.561 794.174 226.696 1229.79 212.674C1665.4 198.652 1528.98 202.901 1435.97 843.245Z"
+            fill="#4680FF"
+          />
+        </svg>
+
+        <div class="payments-desc">
+          <h2>payment methods</h2>
+          <p>
+            Enjoy the freedom to choose how you pay! We offer a wide range of
+            secure and convenient payment options tailored to your preferences.
+            Whether it’s using your credit card, debit card, or trusted
+            e-wallets like PayPal, we’ve got you covered. Worried about
+            security? Rest assured, all transactions are encrypted to protect
+            your personal data. Prefer a hands-on approach? Opt for cash on
+            delivery for maximum flexibility. At [Your Website Name], our goal
+            is to make your shopping experience seamless, safe, and hassle-free
+            from start to finish.
+          </p>
+        </div>
+
+        <div class="payments">
+          <div>
+            <img src="./src/images/payment1.png" alt="payment1" />
+            <img src="./src/images/payment2.png" alt="payment2" />
+          </div>
+          <div>
+            <img src="./src/images/payment3.png" alt="payment3" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="wow animate__animated animate__fadeInUp questions-sec"
+      data-wow-duration=".5s"
+      data-wow-delay="0s"
+      data-wow-offset="100"
+    >
+      <div class="container">
+        <div class="questions-desc">
+          <h2>
+            <span>Frequently</span>
+            <span>asked questions</span>
+          </h2>
+          <p>
+            If you are not sure whether Draft is suitable is for you or not, do
+            not worry. We are here to explain everything you might want to know
+          </p>
+        </div>
+        <div class="questions">
+          <div class="question">
+            <button
+              class=""
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseQuestion1"
+              aria-expanded="false"
+              aria-controls="collapseQuestion1"
+            >
+              How much can I earn daily?
+            </button>
+            <div class="collapse" id="collapseQuestion1">
+              <div class="card card-body">
+                Does it require a deposit to withdraw profits?Does it require a
+                deposit to withdraw profits?Does it require a deposit to
+                withdraw profits?Does it require a deposit to withdraw
+                profits?Does it require a deposit to withdraw profits?Does it
+                require a deposit to withdraw profits?Does it require a deposit
+                to withdraw profits?Does it require a deposit to withdraw
+                profits?Does it require a deposit to withdraw profits?Does it
+                require a deposit to withdraw profits?Does it require a deposit
+                to withdraw profits?Does it require a deposit to withdraw
+                profits?
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <button
+              class=""
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseQuestion2"
+              aria-expanded="false"
+              aria-controls="collapseQuestion2"
+            >
+              Does it require a deposit to withdraw profits?
+            </button>
+            <div class="collapse" id="collapseQuestion2">
+              <div class="card card-body">
+                Does it require a deposit to withdraw profits?Does it require a
+                deposit to withdraw profits?Does it require a deposit to
+                withdraw profits?Does it require a deposit to withdraw
+                profits?Does it require a deposit to withdraw profits?Does it
+                require a deposit to withdraw profits?Does it require a deposit
+                to withdraw profits?Does it require a deposit to withdraw
+                profits?Does it require a deposit to withdraw profits?Does it
+                require a deposit to withdraw profits?Does it require a deposit
+                to withdraw profits?Does it require a deposit to withdraw
+                profits?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="./src/js/jquery-3.3.1.min.js"></script>
     <script src="./src/js/bootstrap.min.js"></script>
     <script src="./src/js/jquery.sticky.js"></script>
     <script src="./src/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
