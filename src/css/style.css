@@ -38,7 +38,7 @@ button:focus {
 @media (min-width: 550px) {
   .container {
     width: 100% !important;
-    padding: 0 5pz !important;
+    padding: 0 5px !important;
   }
 }
 
@@ -1088,15 +1088,13 @@ button:focus {
         }
       }
       .blogs {
-
-
         .blog {
           width: 48%;
           p {
             font-family: Alexandria;
             font-size: clamp(8px, 0.625vw, 12px);
             font-weight: 400;
-            line-height: clamp( 14px, 1.0416666666666665vw, 20px);
+            line-height: clamp(14px, 1.0416666666666665vw, 20px);
             color: #828282;
           }
         }
@@ -1107,6 +1105,118 @@ button:focus {
 
 footer {
   margin-top: clamp(50px, 10.416666666666668vw, 200px);
+  background: #000;
+}
+
+.proAd-footer .copyright,
+h6 {
+  font-size: 18px;
+}
+
+.footer--fixed .proAd-footer,
+.footer--sticky .proAd-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.footer--sticky .proAd-footer {
+  z-index: 3;
+}
+.proAd-footer.footer--white {
+  background: #fafafa;
+}
+.proAd-hero .image,
+.proAd-hero .image video,
+.proAd-sep .sep-img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+.proAd-footer .footer--default {
+  padding: 90px 0 30px;
+}
+.proAd-footer .separator {
+  margin: 60px 0 30px;
+  border-top: 7px solid transparent;
+  background-image: url("https://theproad.com/theproad/assets/images/fline.svg");
+}
+ul.proAd-footer-menu li {
+  margin: 0 0 14px;
+  font-size: 18px;
+}
+.proAd-cta-2-text a,
+.proAd-footer-lnk {
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.proAd-social-1 ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 5px;
+}
+
+.proAd-social-1 ul li a {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #3e3e3e;
+  border-radius: 70px;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: #666;
+  -webkit-transition: 0.4s cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+.proAd-social-1 ul li a i {
+  width: 22px;
+  height: 22px;
+}
+
+.proAd-social-1.social--minimal ul li a {
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 18px;
+  color: #000;
+}
+.proAd--social--dark .proAd-social-1 ul li a::before {
+  background: #282828;
+}
+.proAd-social-1 ul li a:hover {
+  color: #fff;
+  border-color: #000;
+}
+.proAd--social--dark .proAd-social-1 ul li a:hover {
+  border-color: #282828;
+}
+.proAd-social-2 ul li a {
+  display: flex;
+  width: 56px;
+  height: 56px;
+  border: 1px solid #fff;
+  border-radius: 56px;
+  justify-content: center;
+  font-size: 16px;
+  color: #fff;
+  -webkit-transition: 0.4s cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+.proAd-text-white {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .proAd-footer .footer--default {
+    padding: 60px 0 30px;
+  }
 }
 
 @keyframes text-animation {
