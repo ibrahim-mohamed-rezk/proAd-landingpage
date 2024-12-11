@@ -35,7 +35,7 @@ button:focus {
   overflow: hidden;
 }
 
-@media (max-width: 550px) {
+@media (min-width: 550px) {
   .container {
     width: 100% !important;
     padding: 0 5px !important;
@@ -157,7 +157,7 @@ button:focus {
   right: 0;
   z-index: 2000;
   padding-top: 20px;
-  background: #454545;
+  background: #fff;
   height: calc(100vh);
   -webkit-transform: translateX(110%);
   -ms-transform: translateX(110%);
@@ -167,91 +167,7 @@ button:focus {
   -webkit-transition: 0.3s all ease-in-out;
   -o-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
-
-  .icon-close2:before {
-    content: "\e5cd";
-    color: #fff;
-  }
-
-  .site-mobile-menu-body {
-    .auth-buttons {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 10px 0px;
-      flex-direction: column;
-      width: 100%;
-      margin-top: 10px;
-
-      button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 40px;
-        border: none;
-        outline: none;
-        border-radius: 25px;
-        color: #ffffff;
-        font-family: DM Sans;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 20.83px;
-      }
-
-      .register {
-        background-color: transparent;
-        border: 1px solid #4680ff;
-        color: #4680ff;
-      }
-
-      .sigin {
-        background-color: #4680ff;
-      }
-    }
-
-    .site-nav-wrap {
-      display: flex;
-      align-items: center;
-      margin: 0;
-      list-style: none;
-      justify-items: center;
-      gap: clamp(20px, 2.604166666666667vw, 50px);
-      flex-direction: column;
-      margin-top: 20px;
-      width: 100%;
-      border-top: 1px solid #ffffff85;
-      padding-top: 30px;
-
-      li {
-        width: 100%;
-
-        a {
-          font-family: DM Sans;
-          font-size: 14px;
-          font-weight: 500;
-          line-height: 23.44px;
-          color: #fff;
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-      }
-
-      .active {
-        a {
-          background: #007bff;
-          color: #fff;
-          border-radius: 30px;
-          padding: 5px 20px;
-        }
-      }
-    }
-  }
 }
-
 .offcanvas-menu .site-mobile-menu {
   -webkit-transform: translateX(0%);
   -ms-transform: translateX(0%);
@@ -294,7 +210,7 @@ button:focus {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-
+  background-image: url("../images/hero_1.png");
   padding: 20px 0;
   position: relative;
 
