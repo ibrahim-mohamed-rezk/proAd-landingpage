@@ -33,18 +33,28 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <!-- Style -->
-    <link rel="stylesheet" href="{{url('')}}/assets/src/css/style1.css" />
+    <link rel="stylesheet" href="{{url('')}}/assets/src/css/style4.css" />
     <title>ProAd</title>
   </head>
   <body>
-    <div class="site-mobile-menu">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
+      <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body">
+          {{-- <div class="auth-buttons">
+            @guest
+                <!--<button class="register" onclick="window.location.href='{{ route('register') }}'">Register</button>-->
+                <button class="sigin" onclick="window.location.href='{{ route('login') }}'">Sing In</button>
+            @endguest
+            @auth
+                <button class="sigin" onclick="window.location.href='{{ route('dashboard') }}'">My Dashboard</button>
+            @endauth
+      </div> --}}
         </div>
       </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
 
     <header class="site-navbar" role="banner">
       <div class="container">
@@ -711,7 +721,7 @@
             >
               <!-- Copyright -->
               <div class="copyright proAd-text-white">
-                © 2023 All rights reserved.
+                锟�0锟�8 2023 All rights reserved.
               </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 align-right">
